@@ -39,7 +39,7 @@ alias g='git'
 
 # Alias for lazyness
 alias cc='clear'
-alias dev='cd $HOME/github/dev'
+alias glab='cd $HOME/gitlab'
 alias config='. $HOME/shell_scripts/config.sh'
 
 # PATHS 
