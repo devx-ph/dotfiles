@@ -66,7 +66,7 @@ https://youtu.be/vizMUgAVkjg
     
     ```bash
     echo ".dotfiles" >> .gitignore
-    git clone --bare <https://github.com/igortxra/dotfiles.git> $HOME/.dotfiles
+    git clone --bare <https://github.com/devx-ph/dotfiles.git> $HOME/.dotfiles
     alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
     dotfiles config --local status.showUntrackedFiles no
     dotfiles checkout
