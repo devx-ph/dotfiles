@@ -39,8 +39,18 @@ alias g='git'
 
 # Alias for lazyness
 alias cc='clear'
-alias cromai='cd $HOME/github/cromai'
+alias dev='cd $HOME/github/dev'
 alias config='. $HOME/shell_scripts/config.sh'
+
+# PATHS 
+export PATH="/home/devx/.flutter/flutter/bin:$PATH"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+#get fastest mirrors in your neighborhood
+alias mirror="sudo reflector -c 'Hong Kong' -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector -c 'Hong Kong' --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector -c 'Hong Kong' --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector -c 'Hong Kong' --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
 # Load autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
