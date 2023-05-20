@@ -78,7 +78,7 @@ CMD_SCREENSHOT = "flameshot gui"
 CMD_TODO_LIST = "todour"
 CMD_LOCK_SCREEN = "betterlockscreen -l blur"
 CMD_WIFI_MENU = "iwgtk"
-CMD_FILE_MANAGER = "thunar"
+CMD_FILE_MANAGER = "pcmanfm"
 CMD_MONITOR_ONLYNOTEBOOK = "autorandr --change onlynotebook"
 CMD_MONITOR_ONLYEXTERNAL = "autorandr --change onlyexternal"
 CMD_MONITOR_DUAL = "autorandr --change dualmonitor"
@@ -444,10 +444,10 @@ main_top_widgets = [
         scale=0.8,
         **widget_defaults),
 
-    # widget.WindowCount(
-    #     background=colors.window_count.bg, 
-    #     foreground=colors.window_count.fg, 
-    #     show_zero=True),
+    widget.WindowCount(
+    background=colors.window_count.bg, 
+    foreground=colors.window_count.fg, 
+    show_zero=True),
 
     widget.Spacer(5),
     groupbox_main,
@@ -462,7 +462,7 @@ main_top_widgets = [
         scroll_interval=0,
         background=colors.spotify.bg,
         foreground=colors.spotify.fg,
-        fmt='{}   ',
+        fmt='{}   ',
         paused_text='  {track}',
         mouse_callbacks={
             "Button3": lazy.function(go_to_group("8"))
