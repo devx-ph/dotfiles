@@ -43,8 +43,9 @@ alias glab='cd $HOME/gitlab'
 alias config='. $HOME/shell_scripts/config.sh'
 
 # PATHS 
-export PATH="/home/devx/.flutter/flutter/bin:$PATH"
+export PATH="$HOME/.flutter/flutter/bin:$PATH"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export PATH="$HOME/.local/bin/:$PATH"
 
 #get fastest mirrors in your neighborhood
 alias mirror="sudo reflector -c 'Hong Kong' -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
