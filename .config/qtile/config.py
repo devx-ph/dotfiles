@@ -547,7 +547,9 @@ main_top_widgets = [
         display_format=bold(UNICODE_UPDATES + " {updates} updates"),
         colour_have_updates=colors.check_updates.fg,
         background=colors.check_updates.bg,
-        no_update_string=UNICODE_NO_UPDATES),
+        no_update_string=UNICODE_NO_UPDATES,
+        update_interval=10
+    ),
 
     widget.Spacer(20),
 
