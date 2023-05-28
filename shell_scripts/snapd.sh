@@ -4,7 +4,7 @@ sudo timeshift --list
 read "n?How many snapshot you want to delete? "
 
 if [[ -z "$n" ]] ; then
-  echo "Error. Enter a how many snapshots to delete!"
+  echo "Error. Enter how many snapshots to delete!"
 else
   for (( i=0; i < n; i++ )) ; do
     read "d?Enter a name of snapshot you want to delete: " 
