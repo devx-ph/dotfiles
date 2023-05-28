@@ -41,6 +41,9 @@ alias g='git'
 alias cc='clear'
 alias glab='cd $HOME/gitlab'
 alias config='. $HOME/shell_scripts/config.sh'
+alias snaps='. $HOME/shell_scripts/snaps.sh'
+alias snapl='. $HOME/shell_scripts/snapl.sh'
+alias snapd='. $HOME/shell_scripts/snapd.sh'
 
 # PATHS 
 export PATH="$HOME/.flutter/flutter/bin:$PATH"
