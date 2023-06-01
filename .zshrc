@@ -13,7 +13,7 @@ setopt extendedglob
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install # The following lines were added by compinstall
-zstyle :compinstall filename '/home/igortxra/.zshrc'
+zstyle :compinstall filename '/home/devx/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -28,27 +28,28 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Alias for use git to store my dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # Alias for adapt commands to rewritten in rust commands
-alias ls='exa --icons'
-alias ps='procs'
+alias ls="exa --icons"
+alias ps="procs"
 
 # Git alias
-alias g='git'
+alias g="git"
 
 # Alias for lazyness
-alias cc='clear'
-alias glab='cd $HOME/gitlab'
-alias config='. $HOME/shell_scripts/config.sh'
-alias snaps='. $HOME/shell_scripts/snaps.sh'
-alias snapl='. $HOME/shell_scripts/snapl.sh'
-alias snapd='. $HOME/shell_scripts/snapd.sh'
+alias cc="clear"
+alias glab="cd $HOME/gitlab"
+alias config=". $HOME/shell_scripts/config.sh"
+alias snaps=". $HOME/shell_scripts/snaps.sh"
+alias snapl=". $HOME/shell_scripts/snapl.sh"
+alias snapd=". $HOME/shell_scripts/snapd.sh"
+alias march=". $HOME/shell_scripts/march.sh"
 
 # PATHS 
 export PATH="$HOME/.flutter/flutter/bin:$PATH"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 #get fastest mirrors in your neighborhood
 alias mirror="sudo reflector -c 'Hong Kong' -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
