@@ -129,7 +129,7 @@ while true ; do
       echo "||=============================||" 
       echo "              START"
       printf "\n"
-      echo "Check updates for once for every two or three days"
+      echo "Check updates once for every two or three days"
       echo "Clean package cache every 10-15 days" 
       echo "Check orphans and unwanted dependencies every 15 days"
       echo "Check cache dir and config dir every three weeks"
