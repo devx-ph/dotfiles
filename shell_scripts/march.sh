@@ -20,6 +20,7 @@ while true ; do
   echo "[7] Check orphans"
   echo "[8] Delete orphans"
   echo "[9] Check config"
+  echo "[ysc] Delete yay cache"
   echo ""
   echo "||===================||"
   echo "|| press 'q' to quit ||"
@@ -137,7 +138,8 @@ while true ; do
       printf "\n"
       echo "               END"
       echo "||=============================||" 
-      printf '\n';; 
+      printf "\n";; 
+    "ysc" ) yay -Sc ; printf "\n" ;;
     "q" ) break ;;
     "cc" ) clear ;; 
     * ) 
