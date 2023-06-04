@@ -44,7 +44,8 @@ alias config=". $HOME/shell_scripts/config.sh"
 alias snaps=". $HOME/shell_scripts/snaps.sh"
 alias snapl=". $HOME/shell_scripts/snapl.sh"
 alias snapd=". $HOME/shell_scripts/snapd.sh"
-alias march=". $HOME/shell_scripts/march.sh"
+alias snapr=". $HOME/shell_scripts/snapr.sh"
+alias archm=". $HOME/shell_scripts/archm.sh"
 
 # PATHS 
 export PATH="$HOME/.flutter/flutter/bin:$PATH"
